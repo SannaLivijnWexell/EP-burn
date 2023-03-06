@@ -3,11 +3,11 @@ import { RenderPass } from "https://unpkg.com/three@0.120.0/examples/jsm/postpro
 import { UnrealBloomPass } from "https://unpkg.com/three@0.120.0/examples/jsm/postprocessing/UnrealBloomPass.js";
 import { OBJLoader } from "https://unpkg.com/three@0.120.0/examples/jsm/loaders/OBJLoader";
 import { OrbitControls } from "https://unpkg.com/three@0.120.0/examples/jsm/controls/OrbitControls";
-var cardtemplate = "cardtemplate3.png";
-var cardtemplateback = "cardtemplateback4.png";
-var flower = "puss2.png";
+var cardtemplate = "cardtemplate3-earthpeople.png";
+var cardtemplateback = "cardtemplateback4-original.png";
+var flower = "background-image.png";
 var noise2 = "https://raw.githubusercontent.com/pizza3/asset/master/noise2.png";
-var color11 = "https://raw.githubusercontent.com/pizza3/asset/master/color11.png";
+var color11 = "color11-mod-pink.png";
 var backtexture = "https://raw.githubusercontent.com/pizza3/asset/master/color3.jpg";
 var skullmodel = "eplogo3.obj";
 var voronoi = "rgbnoise2-xl.png";
@@ -512,6 +512,9 @@ function loadskull() {
       sceneRTT.add(modelgroup);
     });
   });
+
+
+  
 }
 var matrix = new THREE.Matrix4();
 var period = 5;
