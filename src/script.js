@@ -5,7 +5,7 @@ import { OBJLoader } from "https://unpkg.com/three@0.120.0/examples/jsm/loaders/
 import { OrbitControls } from "https://unpkg.com/three@0.120.0/examples/jsm/controls/OrbitControls";
 var cardtemplate = "cardtemplate3.png";
 var cardtemplateback = "cardtemplateback4.png";
-var flower = "puss.png";
+var flower = "puss2.png";
 var noise2 = "https://raw.githubusercontent.com/pizza3/asset/master/noise2.png";
 var color11 = "https://raw.githubusercontent.com/pizza3/asset/master/color11.png";
 var backtexture = "https://raw.githubusercontent.com/pizza3/asset/master/color3.jpg";
@@ -32,7 +32,7 @@ var options = {
   exposure: 2.8,
   bloomStrength: 0.6,
   bloomThreshold: 0,
-  bloomRadius: 1.29,
+  bloomRadius: 2.0,
   color0: [110,148,245],
   color1: [265, 0, 170],
   color2: [0, 150, 255],
@@ -367,7 +367,7 @@ function init() {
 }
 
 function plane() {
-  var geometry = new THREE.PlaneGeometry(30, 30);
+  var geometry = new THREE.PlaneGeometry(20, 30);
   frontmaterial = new THREE.ShaderMaterial({
     uniforms: {
       cardtemplate: {
@@ -409,7 +409,7 @@ function plane() {
 }
 
 function planeback() {
-  var geometry = new THREE.PlaneGeometry(30, 30);
+  var geometry = new THREE.PlaneGeometry(20, 30);
   backmaterial = new THREE.ShaderMaterial({
     uniforms: {
       cardtemplate: {
