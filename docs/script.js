@@ -12,7 +12,6 @@ var backtexture = "https://raw.githubusercontent.com/pizza3/asset/master/color3.
 var skullmodel = "eplogo3.obj";
 var voronoi = "rgbnoise2-xl.png";
 
-
 var scene,
   sceneRTT,
   camera,
